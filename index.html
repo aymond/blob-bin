@@ -1,0 +1,53 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/blobbin.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <div class="container-main">
+
+            <h1>Blob Bin</h1>
+            <p>Upload data anonymously, set the expiry time, and share the link.</p>
+
+            <form method="post" action="" enctype="multipart/form-data" novalidate id="filedrag">
+
+                <label for="filechoose">drop files here...</label>
+                <div class="blob_input">
+                    <input class="blob_file"
+                           type="file"
+                           name="files[]"
+                           id="filechoose"
+                           data-multiple-caption="{count} files selected"
+                           multiple/>
+                </div>
+
+                <div class="blob_uploading">Uploading...</div>
+                <div class="blob_success">Done!</div>
+                <div class="blob_error">Error! <span></span>.</div>
+
+            </form>
+
+        </div>
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+</html>

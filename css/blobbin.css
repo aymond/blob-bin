@@ -1,0 +1,51 @@
+/*
+ * Delbridge
+ */
+
+
+body {
+    color: #3498db;
+    background-color: #34495e;
+    padding: 5rem 1.25rem;
+}
+
+/* ==========================================================================
+   Blobbin Base styles
+   ========================================================================== */
+.blob_draganddrop,
+.blob_uploading,
+.blob_success,
+.blob_error {
+    display: none;
+}
+
+.blob_input {
+    display: none;
+}
+
+.container-main {
+    width: 100%;
+    max-width: 680px;
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+#filedrag {
+    font-size: 1.25rem;
+    background-color: #ecf0f1;
+    border-radius: 4px;
+    position: relative;
+    padding: 100px 20px;
+    outline: 2px dashed #3498db;
+    outline-offset: -10px;
+    -webkit-transition: outline-offset .15s ease-in-out, background-color .15s linear;
+    transition: outline-offset .15s ease-in-out, background-color .15s linear;
+}
+
+#filedrag.hover
+{
+    background-color: #c8dadf;
+    color: #d35400;
+    outline: 2px dashed #d35400;
+}
