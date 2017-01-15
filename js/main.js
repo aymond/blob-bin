@@ -11,7 +11,6 @@
         return document.getElementById(id);
     }
 
-
     // output information
     function Output(msg) {
         var m = $id("messages");
@@ -38,7 +37,7 @@
 
         // process all File objects
         for (var i = 0, f; f = files[i]; i++) {
-            ParseFile(f);
+            window.alert('File dropped!');
         }
 
     }
@@ -55,12 +54,11 @@
 
     }
 
-
     // initialize
     function Init() {
         console.log(this);
         var fileselect = $id("filechoose"),
-            filedrag = $id("filedrag"),
+            dropzone = $id("dropzone"),
             submitbutton = $id("submitbutton");
 
         // file select
@@ -71,10 +69,10 @@
         if (xhr.upload) {
 
             // file drop
-            filedrag.addEventListener("dragover", FileDragHover, false);
-            filedrag.addEventListener("dragleave", FileDragHover, false);
-            filedrag.addEventListener("drop", FileSelectHandler, false);
-            filedrag.style.display = "block";
+            dropzone.addEventListener("dragover", FileDragHover, false);
+            dropzone.addEventListener("dragleave", FileDragHover, false);
+            dropzone.addEventListener("drop", FileSelectHandler, false);
+            dropzone.style.display = "block";
         }
     }
 
@@ -82,6 +80,5 @@
     if (window.File && window.FileList && window.FileReader) {
         Init();
     }
-
 
 })();

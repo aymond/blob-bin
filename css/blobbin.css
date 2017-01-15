@@ -31,7 +31,7 @@ body {
 
 }
 
-#filedrag {
+#dropzone {
     font-size: 1.25rem;
     background-color: #ecf0f1;
     border-radius: 4px;
@@ -43,7 +43,7 @@ body {
     transition: outline-offset .15s ease-in-out, background-color .15s linear;
 }
 
-#filedrag.hover
+#dropzone.hover
 {
     background-color: #c8dadf;
     color: #d35400;
